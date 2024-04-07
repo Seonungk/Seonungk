@@ -40,6 +40,8 @@ import tempfile
 from PIL import Image
 from io import BytesIO
 
+api_key = st.secrets["default"]["api_key"]
+
 class StreamHandler(BaseCallbackHandler):
     def __init__(self, container, initial_text="", display_method='markdown'):
         super().__init__()
